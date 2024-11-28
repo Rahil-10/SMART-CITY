@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smart City Guide</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Welcome to Smart City Guide</h1>
+        <nav>
+            <ul>
+                <li><a href="#tourism">Tourism</a></li>
+                <li><a href="#students">Students</a></li>
+                <li><a href="#jobs">Job Seekers</a></li>
+                <li><a href="#business">Business</a></li>
+            </ul>
+        </nav>
+        <div class="search-bar">
+            <input type="text" id="searchInput" placeholder="Search for information...">
+            <button onclick="performSearch()">Search</button>
+        </div>
+    </header>
+
+    <div class="carousel">
+        <div class="carousel-item active">Welcome to Smart City Guide - Your City Companion</div>
+        <div class="carousel-item">Discover the Best Hotels, Tourist Spots, and Services</div>
+        <div class="carousel-item">Get Job Updates and Business Opportunities</div>
+    </div>
+
+    <main>
+        <section id="tourism">
+            <h2>Tourism Information</h2>
+            <p>Find the best hotels, tourist attractions, restaurants, and more!</p>
+            <button onclick="showInfo('Tourism')">Explore</button>
+        </section>
+
+        <section id="students">
+            <h2>Students Information</h2>
+            <p>Discover the best educational institutes, libraries, and more!</p>
+            <button onclick="showInfo('Students')">Explore</button>
+        </section>
+
+        <section id="jobs">
+            <h2>Job Seekers Information</h2>
+            <p>Get the latest job opportunities in various sectors.</p>
+            <button onclick="showInfo('Jobs')">Explore</button>
+        </section>
+
+        <section id="business">
+            <h2>Business Information</h2>
+            <p>Explore trade centers, industries, and business opportunities.</p>
+            <button onclick="showInfo('Business')">Explore</button>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Smart City Guide</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
